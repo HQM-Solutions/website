@@ -1,0 +1,19 @@
+.primarytext{
+    color: var(--primaryColor--);
+}
+.primarybg{
+    background-color: var(--primaryColor--);
+}
+
+.primarybtn{
+    background: var(--primaryColor--);
+    background: var(--gradient1--);
+    
+}
+
+.primarybtn:hover {
+  box-shadow: 0px 0px 10px rgba(78, 142, 255, 0.6),
+              0px 0px 15px rgba(78, 142, 255, 0.4),
+              0px 0px 20px rgba(78, 142, 255, 0.2);
+}
+

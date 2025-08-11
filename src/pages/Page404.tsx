@@ -1,6 +1,6 @@
 import React,{ type CSSProperties } from 'react';
 
-const TempPage: React.FC = () => {
+const Page404: React.FC = () => {
   const styles: Record<string, CSSProperties> = {
     root: {
       '--primary-color': '#905bd6',
@@ -197,4 +197,4 @@ const TempPage: React.FC = () => {
   );
 };
 
-export default TempPage;
+export default Page404;

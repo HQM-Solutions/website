@@ -1,4 +1,13 @@
 @import 'tailwindcss';
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+:root{
+  --primaryColor--:#31c1de;
+  --bgColor--:#030606;
+  --accentColor-:#71C7AE;
+  --gradient1--:linear-gradient(90deg,rgba(49, 193, 222, 1) 0%, rgba(113, 199, 174, 1) 100%);
+  --textColor--:#FFFFFF;
+}
 
 
 @layer base {
@@ -13,10 +22,16 @@
 
 *{
   box-sizing: border-box;
+   
+    
 }
 
 html{
-  background-color: #100E17;
+  
+   background-color:var(--bgColor--) ;
+    color: var(--textColor--);
 overflow: hidden;
+font-family: 'Satoshi', sans-serif;
+
 
 }
