@@ -1,5 +1,5 @@
 import './App.css'
-import TempPage from './components/TempPage'
+import DefaultRoutes from './routes/Routes'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <TempPage/>
+   <DefaultRoutes/>
     
     </>
   )
