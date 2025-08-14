@@ -1,6 +1,4 @@
-.primarytext{
-    color: var(--primaryColor--);
-}
+
 .primarybg{
     background-color: var(--primaryColor--);
 }
@@ -10,6 +8,52 @@
     background: var(--gradient1--);
     
 }
+
+/* Generic gradient property registration */
+@layer base {
+  @property --st {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: transparent;
+  }
+  @property --en {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: transparent;
+  }
+}
+
+/* Generic gradient background (normal background fill) */
+.gradient-bg {
+  background: linear-gradient(90deg, var(--st), var(--en));
+  transition: --st 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+              --en 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Gradient clipped text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--st), var(--en));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Firefox */
+  transition: --st 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+              --en 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Presets */
+.gradient-transparent {
+  --st: rgba(0, 0, 0, 0);
+  --en: rgba(0, 0, 0, 0);
+}
+.gradient-primary {
+  --st: rgba(49, 193, 222, 1);
+  --en: rgba(113, 199, 174, 1);
+}
+.gradient-white {
+  --st: rgba(255, 255, 255, 1);
+  --en: rgba(255, 255, 255, 1);
+}
+
 
 .primarybtn:hover {
   box-shadow: 0px 0px 10px rgba(78, 142, 255, 0.6),

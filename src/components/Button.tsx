@@ -12,23 +12,21 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 const Button:React.FC<ButtonProps> = ({icon,iconComponent,buttonText,buttonClassName,iconClassName,textClassName,iconStart=true,...props}) => {
   return (
-    <button className={`inline-flex items-center transition-colors cursor-pointer duration-200 border-none  outline-none focus:outline:none`} {...props}>
-       <div className={`flex items-center ${buttonClassName}`}>
-
-     {iconStart &&
-     <>  
-      {icon && <img src={icon} alt='btnicon' className={`${iconClassName}`}/>}
+    <button 
+      className="inline-flex items-center transition-colors cursor-pointer duration-200 border-none outline-none focus:outline:none" 
+      {...props}
+    >
+      <div className={`flex items-center ${buttonClassName}`}>
+      {iconStart && <>  
+        {icon && <img src={icon} alt='btnicon' className={`${iconClassName}`}/>}
         {iconComponent && iconComponent}
-        </>
-        }
-        <span className={`${textClassName}`}>{buttonText}</span>
-         {!iconStart &&
-     <>  
-      {icon && <img src={icon} alt='btnicon ' className={`${iconClassName}`}/>}
-        {iconComponent && iconComponent}
-        </>
-        }
-       </div>
+      </>}
+      <span className={`${textClassName}`}>{buttonText}</span>
+       {!iconStart && <>  
+          {icon && <img src={icon} alt='btnicon ' className={`${iconClassName}`}/>}
+          {iconComponent && iconComponent}
+        </>}
+      </div>
     </button>
   )
 }

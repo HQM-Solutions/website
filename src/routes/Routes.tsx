@@ -1,8 +1,6 @@
-
 import { Route,  Routes } from 'react-router-dom'
-import LandingPage from '../pages/LandingPage'
-import Page404 from '../pages/Page404'
-
+import LandingPage from '@/components/pages/LandingPage'
+import Page404 from '@/components/pages/Page404'
 
 const DefaultRoutes = () => {
   return (
