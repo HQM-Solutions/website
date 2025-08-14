@@ -29,23 +29,7 @@ const MainLayout:React.FC<MainLayoutProps> = ({children}) => {
       }
     };
   }, []);
-  //useEffect(() => {
-  //  const el = scrollRef.current;
-  //  if (!el) return;
 
-  //  const onScroll = () => {
-  //    const scrollY = el.scrollTop; // px scrolled inside div
-  //    const screenHeight = window.innerHeight; // h-screen px
-  //    const diff = scrollY - screenHeight;
-
-  //    console.log("ScrollY:", scrollY, "Screen height:", screenHeight, "Difference:", diff);
-  //  };
-
-  //  el.addEventListener("scroll", onScroll);
-  //  return () => el.removeEventListener("scroll", onScroll);
-  //}, []);
-
-  //console.log(window.innerHeight-currentScroll-64<0);
   return (
     <div className={cn(
       "w-full h-screen overflow-hidden w-screen h-screen bg-center bg-no-repeat bg-cover bgbrightness-[0.1] bg-white bg-primarygradient-500",
