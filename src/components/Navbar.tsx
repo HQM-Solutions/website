@@ -11,7 +11,7 @@ const Navbar:React.FC<{
 }) => {
   return (
    <nav className={cn(
-      "grid grid-cols-[1fr_auto_1fr] items-center w-full max-w-[1440px] mx-auto px-3 gradient-bg gradient-transparent",
+      "grid grid-cols-[1fr_auto_1fr] items-center w-full  mx-auto px-3 gradient-bg gradient-transparent",
       isOneScreenDown && "gradient-primary",
     )}>
      {/* Logo */}
