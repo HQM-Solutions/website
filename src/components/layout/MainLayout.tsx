@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, type ReactNode } from 'react'
 import Navbar from '@/components/Navbar'
-import bg from '@/assets/bg.png'
+
 import { cn } from '@/lib/utils'
 
 interface MainLayoutProps {
