@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, type ReactNode } from 'react'
 import Navbar from '@/components/Navbar'
 
 import { cn } from '@/lib/utils'
+import Footer from '../Footer'
 
 interface MainLayoutProps {
     children:ReactNode
@@ -32,7 +33,7 @@ const MainLayout:React.FC<MainLayoutProps> = ({children}) => {
 
   return (
     <div className={cn(
-      "w-full h-screen overflow-hidden   ",
+      "w-full h-screen  overflow-hidden grid grid-cols-1",
       
     )} 
    
@@ -41,7 +42,9 @@ const MainLayout:React.FC<MainLayoutProps> = ({children}) => {
       <Navbar isOneScreenDown={window.innerHeight-currentScroll-64<0}/>
       <div ref={scrollRef} className='h-full w-full overflow-y-auto'>
         {children}
+         <Footer/>
       </div>
+     
     </div>
   )
 }

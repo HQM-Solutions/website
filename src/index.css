@@ -3,7 +3,7 @@
 :root{
   --primaryColor--:#31c1de;
   --bgColor--:#030606;
-  --accentColor-:#71C7AE;
+  --accentColor-:#71c7ae;
   --gradient-start: rgba(49, 193, 222, 1);
   --gradient-end: rgba(113, 199, 174, 1);
   --gradient1--: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
@@ -42,3 +42,35 @@ html{
   overflow: hidden;
   font-family: 'Satoshi', sans-serif;
 }
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(49, 193, 222, 1), rgba(113, 199, 174, 1));
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition:  0.3s ease;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, rgba(49, 193, 222, 1), rgba(113, 199, 174, 1));
+}
+
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
