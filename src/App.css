@@ -3,11 +3,16 @@
     background-color: var(--primaryColor--);
 }
 
-.primarybtn{
-    background: var(--primaryColor--);
-    background: var(--gradient1--);
-    
+.secondarybg{
+  background-color: var(--accentColor-);
 }
+
+.primarybtn{
+    background: var(--gradient1--);
+  
+}
+
+
 
 /* Generic gradient property registration */
 @layer base {
@@ -30,7 +35,7 @@
               --en 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-/* Gradient clipped text */
+
 .gradient-text {
   background: linear-gradient(90deg, var(--st), var(--en));
   -webkit-background-clip: text;
@@ -60,4 +65,22 @@
               0px 0px 15px rgba(78, 142, 255, 0.4),
               0px 0px 20px rgba(78, 142, 255, 0.2);
 }
+
+
+.border-primary{
+  border-color: var(--primaryColor--);
+}
+
+.service-card{
+transition: all 0.2s ease ;
+}
+
+
+.service-card:hover{
+  background-color: rgb(113, 199, 174,0.6);
+  transform: scale(0.95) translateY(-5px);
+ 
+  
+}
+
 
